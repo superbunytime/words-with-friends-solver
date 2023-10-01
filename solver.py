@@ -29,7 +29,7 @@ print(type(txt))
 
 
 for word in txt:
-    if not re.findall("[^tcyvior]", word) and len(word) > 3 and len(word) < 5:
+    if not re.findall("[^tgihnfig]", word) and len(word) > 3:
         print(word)
 # uh hey this isn't done yet
 
@@ -47,3 +47,8 @@ for word in txt:
 # that would never be used in words with friends
 
 # problem: need a handler for mystery word
+
+# write a new regex that accepts all those letters but can also have *one* other letter,
+# and essentially invert the logic being used to determine if there's a fake letter
+# the letter that occurs most in a string aside from the excluded text
+# is going to be the most likely to be the secret word
